@@ -12,46 +12,14 @@ It supports category filtering, product details, pagination, and search function
 - 🔢 Client-side pagination
 - ⚡ Fast and standalone Angular setup
 
-## 🏗️ Project Structure
-MY-STORE/
-├── src/
-│   ├── app/
-│   │   └── products/
-│   │       ├── components/
-│   │       │   ├── product-list/
-│   │       │   ├── category-list/
-│   │       │   └── product-detail/
-│   │       └── services/
-│   └── main.ts
-├── angular.json
-├── package.json
-├── README.md
-## 🧰 Tech Stack
-
-- Angular 17+ (standalone components)
-- SCSS styling
-- RouterModule for navigation
-- HttpClient for API calls
-
-## ▶️ Getting Started
+## ▶️ Local Set Up to Run 
 
 1. **Clone the repo**  
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/sacalgo/My-Store-Angular.git
    cd MY-STORE
-Install dependencies
-
-bash
-Copy
-Edit
-npm install
-Run the app locally
-
-bash
-Copy
-Edit
-ng serve
-Visit the app
+   npm install
+   ng serve
 
 arduino
 Copy
