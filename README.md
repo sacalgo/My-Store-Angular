@@ -13,25 +13,19 @@ It supports category filtering, product details, pagination, and search function
 - ⚡ Fast and standalone Angular setup
 
 ## 🏗️ Project Structure
-
 MY-STORE/
 ├── src/
-│ ├── app/
-│ │ └── products/
-│ │ ├── components/
-│ │ │ ├── product-list/
-│ │ │ ├── category-list/
-│ │ │ └── product-detail/
-│ │ └── services/
-│ └── main.ts
+│   ├── app/
+│   │   └── products/
+│   │       ├── components/
+│   │       │   ├── product-list/
+│   │       │   ├── category-list/
+│   │       │   └── product-detail/
+│   │       └── services/
+│   └── main.ts
 ├── angular.json
 ├── package.json
 ├── README.md
-
-markdown
-Copy
-Edit
-
 ## 🧰 Tech Stack
 
 - Angular 17+ (standalone components)
