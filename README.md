@@ -4,7 +4,6 @@ This is a standalone Angular application that displays products using the [FakeS
 It supports category filtering, product details, pagination, and search functionality.
 
 ## 🚀 Features
-
 - ✅ View all products
 - 🔍 Search products by title
 - 📂 Filter by category
@@ -22,9 +21,9 @@ It supports category filtering, product details, pagination, and search function
    ng serve
    
 
-📌 Routes Overview
-http://localhost:4200
-/products → all products list
-/products/:id → product detail view
-/categories → list of all categories
-/categories/:name → products by selected category
+## Routes Overview
+- http://localhost:4200
+- /products → all products list
+- /products/:id → product detail view
+- /categories → list of all categories
+- /categories/:name → products by selected category
