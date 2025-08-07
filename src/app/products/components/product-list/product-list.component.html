@@ -1,0 +1,37 @@
+<div class="product-list-container">
+  <ng-container *ngIf="loading; else productContent">
+    <mat-spinner></mat-spinner>
+  </ng-container>
+
+  <ng-template #productContent>
+    <div *ngIf="error; else productsGrid" class="error">
+      {{ error }}
+    </div>
+
+    <ng-template #productsGrid>
+      <h2 class="product-heading">
+        {{ categoryName ? ('Category: ' + categoryName) : 'All Products' }}
+      </h2>
+
+      <div class="product-grid">
+        <mat-card *ngFor="let product of pagedProducts" class="product-card" appearance="outlined">
+          <mat-card-header>
+            <mat-card-title class="product-title">{{ product.title }}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image [src]="product.image" alt="{{ product.title }}" class="product-image" />
+          <mat-card-content>
+            <p class="product-price">₹{{ product.price }}</p>
+            <a [routerLink]="['/products', product.id]" class="view-link">🔍 View Product</a>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <mat-paginator
+        [length]="products.length"
+        [pageSize]="pageSize"
+        [pageSizeOptions]="[4]"
+        (page)="changePage($event)">
+      </mat-paginator>
+    </ng-template>
+  </ng-template>
+</div>

@@ -1,0 +1,30 @@
+<mat-toolbar color="primary" class="mat-elevation-z4 toolbar">
+  <span class="logo" routerLink="/">🛍️ MyStore</span>
+
+  <span class="spacer"></span>
+
+  <div class="toolbar-right">
+    <form
+      *ngIf="router.url.includes('/products')"
+      (submit)="$event.preventDefault()"
+      class="search-field"
+    >
+      <input
+        type="text"
+        [(ngModel)]="searchQuery"
+        (ngModelChange)="onSearchChange()"
+        name="search"
+        placeholder="Search products..."
+      />
+    </form>
+
+    <nav class="nav-links">
+      <a mat-button routerLink="/products" routerLinkActive="active-link">Products</a>
+      <a mat-button routerLink="/categories" routerLinkActive="active-link">Categories</a>
+    </nav>
+  </div>
+</mat-toolbar>
+
+<main class="main-container">
+  <router-outlet></router-outlet>
+</main>

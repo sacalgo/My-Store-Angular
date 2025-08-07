@@ -1,0 +1,13 @@
+<div *ngIf="loading" class="loading">Loading categories...</div>
+<div *ngIf="error" class="error">{{ error }}</div>
+
+<div class="category-container" *ngIf="!loading && !error">
+  <h2 class="title">Product Categories</h2>
+  <ul class="category-list">
+    <li *ngFor="let cat of categories">
+      <a [routerLink]="['/categories', cat]">
+        {{ cat | titlecase }}
+      </a>
+    </li>
+  </ul>
+</div>

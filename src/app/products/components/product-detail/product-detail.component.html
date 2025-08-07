@@ -1,0 +1,24 @@
+<div *ngIf="loading" class="loading-spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div *ngIf="error" class="error-message">
+  {{ error }}
+</div>
+
+<div *ngIf="product" class="product-detail-container mat-elevation-z3">
+  <h2 class="product-title">{{ product.title }}</h2>
+  
+  <div class="product-detail-content">
+    <img [src]="product.image" alt="{{ product.title }}" class="product-image" />
+
+    <div class="product-info">
+      <p><strong>Price:</strong> ₹{{ product.price }}</p>
+      <p><strong>Description:</strong> {{ product.description }}</p>
+      <p><strong>Category:</strong> {{ product.category }}</p>
+      <button mat-stroked-button color="primary" routerLink="/products">
+        ⬅️ Back to List
+      </button>
+    </div>
+  </div>
+</div>

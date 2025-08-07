@@ -1,0 +1,74 @@
+/* Global Styles */
+
+
+
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: #f5f5f5;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 16px;
+}
+
+/* App Layout Container */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+nav {
+  width: 100vw; /* ya 100% */
+  margin: 0;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Links */
+a {
+  color: #1976d2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0d47a1;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+.mt-2 {
+  margin-top: 1rem;
+}
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Container */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 16px;
+  }
+}
+
+
