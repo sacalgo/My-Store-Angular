@@ -16,7 +16,7 @@ It supports category filtering, product details, pagination, and search function
 1. **Clone the repo**  
    ```bash
    git clone https://github.com/sacalgo/My-Store-Angular.git
-   cd MY-STORE
+   cd MY-STORE-ANGULAR
    npm install
    ng serve
    
